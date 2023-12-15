@@ -1,27 +1,148 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+/* @tailwind base; */
+/* @tailwind components; */
+/* @tailwind utilities; */
 
-:root {
+/* :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
-}
+} */
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
     --background-start-rgb: 0, 0, 0;
     --background-end-rgb: 0, 0, 0;
   }
-}
+} */
 
 body {
-  color: rgb(var(--foreground-rgb));
+  /* color: rgb(var(--foreground-rgb));
   background: linear-gradient(
       to bottom,
       transparent,
       rgb(var(--background-end-rgb))
     )
-    rgb(var(--background-start-rgb));
+    rgb(var(--background-start-rgb)); */
+    /* height: 100%; */
+    margin: 0%;
+}
+
+.header{
+  display: flex;
+  margin-left: 40px;
+  color: #ff0000;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 900;
+  font-size: xx-large;
+}
+
+.footer{
+  margin-top:auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  border-top: 1px solid white
+}
+
+
+
+.bgImg{
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  min-height: 100vh;
+  
+}
+
+.overlap{
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.container-box{
+    /* display: flex; */
+    
+    position: relative;
+    width: 25vw;
+    height: 70vh;
+    background-color:#2f3640;
+    border: 15px solid #2f3640;
+    opacity: 90%;
+    
+    /* padding: 50px; */
+    /* margin: 20px; */
+}
+
+.container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.email-box{
+  display: flex;
+  justify-content: center;
+  position: relative;
+  margin-top: 30%;
+}
+
+.pwd-box{
+  display: flex;
+  justify-content: center;
+  position: relative;
+  margin-top: 5%;
+}
+
+.email-id{
+  width: 60%;
+  height: 40px;
+  /* background-color: #ff0000; */
+  border-radius: 10px;
+}
+
+input.email-id:hover{
+  border:0;
+  box-shadow: 0 0 10px #e1b12c;
+}
+
+
+.password{
+  width: 60%;
+  height: 40px;
+  border-radius: 10px;
+}
+
+input.password:hover{
+  border:0;
+  box-shadow: 0 0 5px #e1b12c;
+}
+
+.submit{
+  display: flex;
+  justify-content: center;
+  position: relative;
+  margin-top: 5%;
+}
+
+.submit-btn{
+  width: 60%;
+  height: 40px;
+  border-radius: 10px;
+  color: white;
+  background-color: #e84118;
+}
+
+.radioBtn{
+  display: flex;
+  flex-direction:row;
+  justify-content: center;
+}
+
+.rem{
+  color: white;
+  font-size: small;
 }
